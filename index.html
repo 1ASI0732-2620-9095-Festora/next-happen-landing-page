@@ -11,6 +11,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="NextHappen">
+        <img class="brand-logo" src="assets/icon2.png" alt="NextHappen">
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a class="is-active" data-nav href="#inicio" data-i18n="navInicio">Inicio</a>
+        <a data-nav href="#como-funciona" data-i18n="navComo">Cómo funciona</a>
+        <a data-nav href="#planes" data-i18n="navPlanes">Planes</a>
+        <a data-nav href="#testimonios" data-i18n="navTestimonios">Testimonios</a>
+        <a data-nav href="#equipo" data-i18n="navEquipo">Equipo</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Idioma">
+          <button type="button" data-lang="es" class="is-active">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activar modo oscuro"></button>
+        <!-- CTA: vincular aquí la página de inicio de sesión -->
+        <a class="btn btn-yellow btn-header" href="#login" data-i18n="ctaUnete">Únete</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Móvil">
+      <a href="#inicio" data-i18n="navInicio">Inicio</a>
+      <a href="#como-funciona" data-i18n="navComo">Cómo funciona</a>
+      <a href="#planes" data-i18n="navPlanes">Planes</a>
+      <a href="#testimonios" data-i18n="navTestimonios">Testimonios</a>
+      <a href="#equipo" data-i18n="navEquipo">Equipo</a>
+      <!-- CTA: vincular aquí la página de inicio de sesión -->
+      <a class="btn btn-yellow" href="#login" data-i18n="ctaUnete">Únete</a>
+    </nav>
+  </header>
+
   <main>
     
   </main>
