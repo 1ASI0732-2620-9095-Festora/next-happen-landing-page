@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="NextHappen">
@@ -51,7 +50,95 @@
   </header>
 
   <main>
-    
+        <section class="hero section-cream" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="live-dot"></span>
+            <span data-i18n="pill">📍 Eventos culturales y ferias en Lima Metropolitana</span>
+          </div>
+          <h1>
+            <span data-i18n="heroTitleA">Descubre lo que está</span>
+            <span class="hero-highlight" data-i18n="heroTitleB">por pasar</span>
+            <span data-i18n="heroTitleC">en Lima</span>
+          </h1>
+          <p class="muted" data-i18n="heroSub">
+            Centralizamos ferias de diseño, bazares independientes, conciertos acústicos y movidas culturales con mapa interactivo en tiempo real y entradas al instante.
+          </p>
+          <!-- CTA: vincular aquí la página de inicio de sesión -->
+          <a class="btn btn-yellow btn-lg" href="#login">
+            <span data-i18n="ctaHero">Únete a NextHappen</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <div class="proof">
+            <div class="avatars" aria-hidden="true">
+              <span class="avatar y">B</span>
+              <span class="avatar m">M</span>
+              <span class="avatar g">C</span>
+              <span class="avatar n">+</span>
+            </div>
+            <div>
+              <div class="proof-title">★ <span data-i18n="comunidad">Comunidad Festora</span></div>
+              <p class="muted" style="font-size:14px;font-weight:700" data-i18n="comunidadSub">
+                +120 ferias y colectivos activos en Barranco, Miraflores, Lima Centro y San Isidro
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mock" aria-hidden="true">
+          <div class="mock-bar">
+            <div class="dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot mint"></span>
+            </div>
+            <span class="url-chip">nexthappen.pe/mapa-lima</span>
+            <span>☰</span>
+          </div>
+          <div class="map">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+              <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d2c5ab" stroke-width="1.5"></path>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#grid)"></rect>
+              <path d="M -20,380 Q 150,300 280,240 T 550,110" fill="none" stroke="#9bc7bf" stroke-linecap="round" stroke-width="24"></path>
+              <path d="M 30,50 L 480,350" fill="none" stroke="#ffffff" stroke-width="12"></path>
+              <path d="M 30,50 L 480,350" fill="none" stroke="#000000" stroke-dasharray="8 6" stroke-width="2"></path>
+              <path d="M 380,30 L 120,390" fill="none" stroke="#ffffff" stroke-width="10"></path>
+              <path d="M 380,30 L 120,390" fill="none" stroke="#000000" stroke-width="2"></path>
+              <path d="M 200,200 L 420,200" fill="none" stroke="#ffffff" stroke-width="8"></path>
+            </svg>
+            <span class="district" style="top:8%;left:8%">Centro Histórico</span>
+            <span class="district" style="top:36%;right:16%">San Isidro</span>
+            <span class="district" style="bottom:28%;right:18%">Miraflores</span>
+            <span class="district" style="bottom:10%;left:16%">Barranco</span>
+            <span class="pin mint" style="top:16%;left:18%">📚 Bazar de Libros</span>
+            <span class="pin yellow" style="top:42%;right:10%">☕ Feria Cafetera</span>
+            <span class="pin" style="bottom:36%;left:12%">🎸 Acústico Indie</span>
+            <article class="event-card">
+              <div class="event-top">
+                <span class="verified"><span class="live-dot"></span> Evento Verificado</span>
+                <span class="today">HOY</span>
+              </div>
+              <h4>Bazar Independiente Barranco</h4>
+              <p class="muted" style="font-size:14px">Sáb 24 May · 11:00 AM · Parque Municipal</p>
+              <div class="event-foot">
+                <span class="free-tag">Ingreso Libre</span>
+                <span>Ver mapa y detalles →</span>
+              </div>
+            </article>
+          </div>
+          <div class="sticker">
+            <strong>Vinilos & Grabados · Miraflores</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   </main>
   <script src="main.js"></script>
 </body>
