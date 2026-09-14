@@ -58,3 +58,31 @@
     });
     document.documentElement.lang = lang === "en" ? "en" : "es";
   }
+  
+  applyLang(localStorage.getItem("nh-lang") || "es");
+
+  langButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      applyLang(btn.getAttribute("data-lang"));
+    });
+  });
+
+  const sections = ["inicio", "como-funciona", "testimonios", "planes", "equipo"];
+  const observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        navLinks.forEach(function (link) {
+          link.classList.toggle("is-active", link.getAttribute("href") === "#" + id);
+        });
+      });
+    },
+    { rootMargin: "-45% 0px -45% 0px" }
+  );
+
+  sections.forEach(function (id) {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+})();
